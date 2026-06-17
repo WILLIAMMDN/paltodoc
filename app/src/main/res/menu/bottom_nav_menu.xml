@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_diagnostico"
+        android:icon="@android:drawable/ic_menu_camera"
+        android:title="Diagnóstico" />
+    <item
+        android:id="@+id/nav_biblioteca"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:title="Biblioteca" />
+    <item
+        android:id="@+id/nav_equipo"
+        android:icon="@android:drawable/ic_menu_my_calendar"
+        android:title="Nosotros" />
+</menu>
