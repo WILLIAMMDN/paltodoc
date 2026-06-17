@@ -69,9 +69,9 @@ El modelo procesa las características morfológicas y cromáticas de las muestr
       <td align="center"><strong>3. Infección por Manchado Solar</strong></td>
     </tr>
     <tr>
-      <td align="center"><img src="./docs/samples/hoja_sana.jpg" width="220" alt="Hoja Sana" /></td>
-      <td align="center"><img src="./docs/samples/hoja_aranita_roja.jpg" width="220" alt="Arañita Roja" /></td>
-      <td align="center"><img src="./docs/samples/hoja_manchado_solar.jpg" width="220" alt="Manchado Solar" /></td>
+      <td align="center"><img src="./docs/samples/hoja_sana_sin_enfermedad.jpg" width="220" alt="Hoja Sana" /></td>
+      <td align="center"><img src="./docs/samples/hoja_eferma_arañita_roja1.jpg" width="220" alt="Arañita Roja" /></td>
+      <td align="center"><img src="./docs/samples/hoja_eferma_manchado_solar1.jpg" width="220" alt="Manchado Solar" /></td>
     </tr>
     <tr>
       <td align="center">Coloración verde uniforme, textura brillante y elástica.</td>
