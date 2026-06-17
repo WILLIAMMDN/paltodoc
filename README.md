@@ -4,7 +4,7 @@
   <h1>Paltodoc</h1>
 
   <p>
-    <strong>Diagnostico foliar asistido por vision computacional para el cultivo de palta</strong>
+    <strong>Diagnostico foliar de las hojas de la palta asistido por un modelo de inteligencia artificial CNN</strong>
   </p>
 
   <p>
@@ -24,11 +24,11 @@
 
 ## Resumen
 
-**Paltodoc** es la implementacion tecnologica de una investigacion aplicada orientada a medir la precision de un modelo de inteligencia artificial para detectar enfermedades foliares de la palta en los valles interandinos de Apurimac. El nucleo academico del proyecto no es la aplicacion movil en si misma, sino el desarrollo, entrenamiento y evaluacion de un modelo de aprendizaje profundo capaz de clasificar imagenes de hojas de palto en categorias fitosanitarias relevantes.
+**Paltodoc** es la implementacion tecnologica de una investigación aplicada orientada a medir la precisión de un modelo de inteligencia artificial para detectar enfermedades foliares de la palta en los valles interandinos de Apurimac. El nucleo académico del proyecto no es la aplicacion movil en si misma, sino el desarrollo, entrenamiento y evaluacion de un modelo de aprendizaje profundo capaz de clasificar imagenes de hojas de palto en categorias fitosanitarias relevantes.
 
 La aplicacion Android incluida en este repositorio corresponde a una fase de transferencia y validacion funcional: permite llevar el modelo entrenado a un entorno movil, ejecutar inferencia local con TensorFlow Lite y demostrar como el resultado de la investigacion puede convertirse en una herramienta de apoyo accesible para productores, estudiantes o tecnicos.
 
-El proyecto nace de una necesidad concreta: muchos pequenos productores no cuentan con acceso inmediato a diagnostico fitosanitario especializado, especialmente en contextos rurales donde la conectividad, el tiempo de respuesta y el costo de evaluacion pueden limitar la toma de decisiones. Paltodoc propone una herramienta de apoyo, no un reemplazo del criterio agronomico, que acerca el analisis visual asistido por inteligencia artificial a escenarios de campo.
+El proyecto nace de una necesidad concreta: muchos pequeños productores no cuentan con acceso inmediato a diagnostico fitosanitario especializado, especialmente en contextos rurales donde la conectividad, el tiempo de respuesta y el costo de evaluacion pueden limitar la toma de decisiones. Paltodoc propone una herramienta de apoyo, no un reemplazo del criterio agronómico, que acerca el analisis visual asistido por inteligencia artificial a escenarios de campo.
 
 La version actual clasifica imagenes en tres categorias:
 
@@ -372,11 +372,9 @@ Limitaciones actuales:
 
 ---
 
-## Equipo
+## Autor
 
 - **Max William Medina Castro** - desarrollo movil, integracion de IA, documentacion tecnica y arquitectura de producto.
-- **Pablo Rodrigo Damiano Cana** - apoyo en desarrollo, evaluacion y validacion del proyecto.
-- **Luis Miguel Curo Medina** - apoyo en investigacion, revision y documentacion.
 
 ---
 

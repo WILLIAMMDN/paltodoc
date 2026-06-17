@@ -34,9 +34,8 @@ android {
         viewBinding = true
     }
     
-    // Esta es la única regla nueva que protege tu IA
-    aaptOptions {
-        noCompress("tflite")
+    androidResources {
+        noCompress.add("tflite")
     }
 }
 
@@ -46,7 +45,6 @@ dependencies {
     implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
 
-    // --- LIBRERÍAS TENSORFLOW LITE ---
     implementation("org.tensorflow:tensorflow-lite:2.14.0")
     implementation("org.tensorflow:tensorflow-lite-support:0.4.4")
     implementation("org.tensorflow:tensorflow-lite-select-tf-ops:2.14.0")
