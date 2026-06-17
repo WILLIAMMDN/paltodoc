@@ -24,9 +24,9 @@
 
 ## Resumen
 
-**Paltodoc** es un prototipo de investigacion aplicada que explora el uso de redes neuronales convolucionales para apoyar el reconocimiento visual de anomalias foliares en cultivos de palta. El sistema fue disenado como una aplicacion Android nativa capaz de capturar o seleccionar una imagen de hoja, normalizarla, ejecutar un modelo de TensorFlow Lite dentro del dispositivo y presentar una orientacion inicial al usuario.
+**Paltodoc** es un prototipo de investigacion aplicada que explora el uso de redes neuronales convolucionales para apoyar el reconocimiento visual de anomalias foliares en cultivos de palta. El sistema fue diseñado como una aplicacion Android nativa capaz de capturar o seleccionar una imagen de hoja, normalizarla, ejecutar un modelo de TensorFlow Lite dentro del dispositivo y presentar una orientación inicial al usuario.
 
-El proyecto nace de una necesidad concreta: muchos pequenos productores no cuentan con acceso inmediato a diagnostico fitosanitario especializado, especialmente en contextos rurales donde la conectividad, el tiempo de respuesta y el costo de evaluacion pueden limitar la toma de decisiones. Paltodoc propone una herramienta de apoyo, no un reemplazo del criterio agronomico, que acerca el analisis visual asistido por inteligencia artificial a escenarios de campo.
+El proyecto nace de una necesidad concreta: muchos pequeños productores no cuentan con acceso inmediato a diagnostico fitosanitario especializado, especialmente en contextos rurales donde la conectividad, el tiempo de respuesta y el costo de evaluacion pueden limitar la toma de decisiones. Paltodoc propone una herramienta de apoyo, no un reemplazo del criterio agronomico, que acerca el analisis visual asistido por inteligencia artificial a escenarios de campo.
 
 La version actual clasifica imagenes en tres categorias:
 
