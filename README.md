@@ -24,9 +24,11 @@
 
 ## Resumen
 
-**Paltodoc** es un prototipo de investigacion aplicada que explora el uso de redes neuronales convolucionales para apoyar el reconocimiento visual de anomalias foliares en cultivos de palta. El sistema fue diseñado como una aplicacion Android nativa capaz de capturar o seleccionar una imagen de hoja, normalizarla, ejecutar un modelo de TensorFlow Lite dentro del dispositivo y presentar una orientación inicial al usuario.
+**Paltodoc** es la implementacion tecnologica de una investigacion aplicada orientada a medir la precision de un modelo de inteligencia artificial para detectar enfermedades foliares de la palta en los valles interandinos de Apurimac. El nucleo academico del proyecto no es la aplicacion movil en si misma, sino el desarrollo, entrenamiento y evaluacion de un modelo de aprendizaje profundo capaz de clasificar imagenes de hojas de palto en categorias fitosanitarias relevantes.
 
-El proyecto nace de una necesidad concreta: muchos pequeños productores no cuentan con acceso inmediato a diagnostico fitosanitario especializado, especialmente en contextos rurales donde la conectividad, el tiempo de respuesta y el costo de evaluacion pueden limitar la toma de decisiones. Paltodoc propone una herramienta de apoyo, no un reemplazo del criterio agronomico, que acerca el analisis visual asistido por inteligencia artificial a escenarios de campo.
+La aplicacion Android incluida en este repositorio corresponde a una fase de transferencia y validacion funcional: permite llevar el modelo entrenado a un entorno movil, ejecutar inferencia local con TensorFlow Lite y demostrar como el resultado de la investigacion puede convertirse en una herramienta de apoyo accesible para productores, estudiantes o tecnicos.
+
+El proyecto nace de una necesidad concreta: muchos pequenos productores no cuentan con acceso inmediato a diagnostico fitosanitario especializado, especialmente en contextos rurales donde la conectividad, el tiempo de respuesta y el costo de evaluacion pueden limitar la toma de decisiones. Paltodoc propone una herramienta de apoyo, no un reemplazo del criterio agronomico, que acerca el analisis visual asistido por inteligencia artificial a escenarios de campo.
 
 La version actual clasifica imagenes en tres categorias:
 
@@ -43,6 +45,7 @@ La version actual clasifica imagenes en tres categorias:
 - [Objetivos](#objetivos)
 - [Alcance Biologico](#alcance-biologico)
 - [Metodologia](#metodologia)
+- [Relacion Entre Investigacion Y Aplicacion Movil](#relacion-entre-investigacion-y-aplicacion-movil)
 - [Arquitectura Del Sistema](#arquitectura-del-sistema)
 - [Modelo De Vision Computacional](#modelo-de-vision-computacional)
 - [Resultados Experimentales](#resultados-experimentales)
@@ -57,12 +60,14 @@ La version actual clasifica imagenes en tres categorias:
 
 ## Pregunta De Investigacion
 
-> ¿En que medida un modelo de vision computacional ejecutado localmente en un telefono Android puede apoyar la identificacion temprana de anomalias foliares en palta, manteniendo un balance razonable entre precision experimental, costo computacional y usabilidad en campo?
+> ¿Cual es la precision de la deteccion de enfermedades de la palta en los valles interandinos de Apurimac mediante un modelo de Inteligencia Artificial?
 
-Esta pregunta orienta el proyecto hacia tres dimensiones complementarias:
+Esta es la pregunta formal del informe de investigacion. La aplicacion Android no reemplaza esa pregunta, sino que amplia el alcance del trabajo al convertir el modelo evaluado en un prototipo funcional de apoyo al diagnostico.
+
+Desde esa lectura, el proyecto se organiza en tres dimensiones complementarias:
 
 - **Exactitud tecnica:** capacidad del modelo para diferenciar patrones visuales entre clases.
-- **Viabilidad computacional:** posibilidad de ejecutar inferencia en un dispositivo movil sin depender de servidores externos.
+- **Transferencia tecnologica:** posibilidad de llevar el modelo entrenado a una aplicacion movil utilizable en escenarios reales.
 - **Utilidad contextual:** entrega de informacion comprensible para productores, estudiantes o tecnicos que necesiten una primera orientacion.
 
 ---
@@ -71,14 +76,15 @@ Esta pregunta orienta el proyecto hacia tres dimensiones complementarias:
 
 ### Objetivo General
 
-Desarrollar y evaluar un prototipo movil de diagnostico foliar asistido por inteligencia artificial para clasificar imagenes de hojas de palta en categorias fitosanitarias visuales relevantes.
+Desarrollar y evaluar un modelo de inteligencia artificial, basado en redes neuronales convolucionales, para detectar de manera precisa, automatizada y oportuna enfermedades foliares de la palta, particularmente arañita roja y manchado solar, en muestras recolectadas en los valles interandinos de Apurimac.
 
 ### Objetivos Especificos
 
-- Construir una aplicacion Android nativa para captura, seleccion y visualizacion de imagenes foliares.
-- Integrar un modelo de clasificacion en formato TensorFlow Lite para inferencia local.
+- Recopilar y estructurar un conjunto de datos de imagenes digitales de hojas de palta, etiquetadas en las clases Sana, Arañita Roja y Manchado Solar.
 - Evaluar distintas configuraciones convolucionales mediante experimentacion controlada.
 - Documentar metricas de rendimiento, matriz de confusion y curvas de entrenamiento.
+- Seleccionar la arquitectura con mejor equilibrio entre precision, sensibilidad, perdida y costo computacional.
+- Integrar el modelo seleccionado en una aplicacion Android como demostracion funcional y extension practica de la investigacion.
 - Presentar resultados de forma clara, prudente y util para un entorno academico y agricola.
 - Identificar limitaciones metodologicas para orientar futuras mejoras del sistema.
 
@@ -131,6 +137,20 @@ La metodologia combina desarrollo movil, aprendizaje profundo y validacion exper
   </table>
   <p><em>Exploracion de distribuciones HSV utilizada para estudiar variaciones cromaticas en el material foliar.</em></p>
 </div>
+
+---
+
+## Relacion Entre Investigacion Y Aplicacion Movil
+
+La investigacion original se concentra en el **modelo de inteligencia artificial**: su construccion, entrenamiento, comparacion de arquitecturas y medicion de precision para clasificar enfermedades de la palta. La aplicacion movil fue desarrollada como una extension practica del estudio, con el proposito de demostrar que el modelo puede ser integrado en una herramienta accesible y cercana al contexto agricola.
+
+En otras palabras:
+
+- **Investigacion:** responde cuanto puede acertar un modelo de IA al detectar enfermedades foliares de la palta.
+- **Modelo:** materializa la propuesta cientifica mediante una CNN entrenada y evaluada con metricas de clasificacion.
+- **Aplicacion Android:** traduce el modelo en una experiencia usable, con captura de imagen, inferencia local y orientacion inicial.
+
+Esta separacion es importante porque evita presentar la app como el objeto principal de investigacion. El aporte central esta en la validacion del modelo; la app fortalece el proyecto al convertir esa validacion en un prototipo tecnologico demostrable.
 
 ---
 
