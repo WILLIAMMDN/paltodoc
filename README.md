@@ -4,7 +4,7 @@
   <h1>Paltodoc</h1>
 
   <p>
-    <strong>Diagnostico foliar asistido por vision computacional para el cultivo de palta</strong>
+    <strong>Diagnostico foliar de las hojas de la palta asistido por un modelo de inteligencia artificial CNN</strong>
   </p>
 
   <p>
